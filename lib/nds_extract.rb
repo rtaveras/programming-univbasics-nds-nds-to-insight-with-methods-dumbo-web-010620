@@ -14,7 +14,7 @@ def directors_totals(nds)
     director_name = nds[i][:name]
     director_totals[director_name] = 0
     while x < nds[i][:movies].length
-    binding.pry
+    
       director_totals[director_name] += gross_for_director(nds[i])
       x += 1 
     end
